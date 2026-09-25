@@ -1,49 +1,40 @@
-Show File Extensions
+# Show File Extensions
 
-Shows file extensions for known file types in Windows File Explorer.
+Display file extensions for known file types in Windows File Explorer.
 
-What it changes
+## Overview
 
-This tweak changes the following registry value:
+Windows hides file extensions for known file types by default.
 
-Setting	Value
-Hive	HKEY_CURRENT_USER
-Path	Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
-Value	HideFileExt
-Type	DWORD
-Enable value	0
-Revert value	1
-Files
+This tweak configures Windows File Explorer to display file extensions such as `.txt`, `.jpg`, `.zip`, and `.exe`.
 
-enable.reg — Shows file extensions.
+## Registry Change
 
-disable.reg — Reverts the change and restores the default behavior.
+| Property | Value |
+|---|---|
+| Hive | `HKEY_CURRENT_USER` |
+| Key | `Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced` |
+| Value | `HideFileExt` |
+| Type | `REG_DWORD` |
+| Enable | `0` |
+| Revert | `1` |
+| Scope | Current user |
 
-Example
+## Files
 
-With extensions visible:
+| File | Description |
+|---|---|
+| `enable.reg` | Enables file extensions |
+| `disable.reg` | Reverts the change |
+| `README.md` | Documentation |
 
-document.txt
-photo.jpg
-archive.zip
-program.exe
+## Usage
 
-Scope
+### Enable
 
-This is a per-user setting under HKEY_CURRENT_USER.
+Double-click `enable.reg` and confirm the Windows Registry prompt.
 
-Administrator privileges are not required.
+The following value will be set:
 
-Windows Compatibility
-
-Intended for supported versions of Windows 10 and Windows 11.
-
-Before Applying
-
-Review the registry path and value above before applying the tweak.
-
-For important systems, create an appropriate registry backup before making configuration changes.
-
-Rollback
-
-Run disable.reg to restore the original setting.
+```text
+HideFileExt = 0
