@@ -1,101 +1,89 @@
-RegForge
+# RegForge
+
+[![CI](https://github.com/leolouis/RegForge/actions/workflows/ci.yml/badge.svg)](https://github.com/leolouis/RegForge/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A curated collection of safe, documented, and reversible Windows Registry tweaks.
 
-What is RegForge?
+## What is RegForge?
 
 RegForge is an open-source collection of Windows Registry tweaks designed to make configuration changes easier to discover, understand, apply, and reverse.
 
 Every tweak is intended to be:
 
-Documented
+- **Documented**: each key and value is explained
+- **Reversible**: a rollback file restores the default state
+- **Categorized**: easy to browse
+- **Validated**: CI checks structure, rollback coverage and admin flags
 
-Reversible
+See the full [tweak catalog](docs/CATALOG.md).
 
-Clearly categorized
+## Quick start
 
-Easy to understand
+```powershell
+git clone https://github.com/leolouis/RegForge.git
+cd RegForge
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
-Tested before being included
+.\regforge.ps1 list
+.\regforge.ps1 info explorer/show-file-extensions
+.\regforge.ps1 apply explorer/show-file-extensions    # backs up affected keys first
+.\regforge.ps1 revert explorer/show-file-extensions
+.\regforge.ps1 profile essentials                      # apply a bundle of tweaks
+```
 
-Categories
-Category	Description
-Explorer	Windows File Explorer tweaks
-Taskbar	Taskbar and Start menu configuration
-Desktop	Desktop and visual settings
-Privacy	Privacy-related Windows settings
-Performance	System and UI performance settings
-Networking	Windows networking configuration
-Windows Update	Windows Update configuration
-System	General Windows system settings
-Repository Structure
-regforge/
-├── tweaks/
-│   ├── explorer/
-│   ├── taskbar/
-│   ├── desktop/
-│   ├── privacy/
-│   ├── performance/
-│   ├── networking/
-│   ├── windows-update/
-│   └── system/
-├── docs/
-├── profiles/
-├── README.md
-└── LICENSE
+Prefer manual? Open a tweak folder, read its `README.md`, and double-click `enable.reg` (or `disable.reg` to undo). More in [docs/USAGE.md](docs/USAGE.md).
 
-Using a Tweak
+## Categories
 
-Open the category containing the tweak you want.
+| Category | Description |
+|---|---|
+| `explorer` | Windows File Explorer tweaks |
+| `taskbar` | Taskbar and Start menu configuration |
+| `desktop` | Desktop and visual settings |
+| `privacy` | Privacy-related Windows settings |
+| `performance` | System and UI performance settings |
+| `networking` | Windows networking configuration |
+| `windows-update` | Windows Update configuration |
+| `system` | General Windows system settings |
 
-Read its README.md.
+## Repository structure
 
-Review the registry changes before applying them.
+```
+RegForge/
+├── tweaks/<category>/<tweak>/
+│   ├── enable.reg      apply
+│   ├── disable.reg     rollback
+│   ├── README.md       documentation
+│   └── tweak.json      metadata
+├── profiles/           bundles of tweaks (JSON)
+├── docs/               usage guide, template, generated catalog
+├── scripts/            validate.py, build_catalog.py
+├── tests/              unit tests for the validator
+├── regforge.ps1        CLI: list / info / apply / revert / backup / profile
+└── .github/            CI, issue and PR templates
+```
 
-Back up relevant registry settings when appropriate.
+## Safety
 
-Run the .reg file to apply the change.
+Registry changes can affect Windows configuration and behavior. Before applying a tweak:
 
-Use the provided rollback file if you want to reverse the change.
+1. Read its documentation and the `.reg` file.
+2. Create a restore point for anything beyond per-user (HKCU) tweaks.
+3. Do not apply tweaks you do not understand.
 
-Safety
+RegForge aims to provide documented and reversible changes, but you are responsible for reviewing and testing changes on your own system. See [SECURITY.md](SECURITY.md).
 
-Registry changes can affect Windows configuration and behavior.
+## Contributing
 
-Before applying a tweak:
+Contributions are welcome. Each tweak needs `enable.reg`, `disable.reg`, a `README.md` and a `tweak.json`. Full rules and the validation commands are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Read its documentation.
+```bash
+python scripts/validate.py
+python scripts/build_catalog.py
+python -m unittest discover -s tests
+```
 
-Understand what registry keys and values it changes.
+## License
 
-Create an appropriate backup when necessary.
-
-Do not apply tweaks you do not understand.
-
-RegForge aims to provide documented and reversible changes, but users are responsible for reviewing and testing changes on their own systems.
-
-Contributing
-
-Contributions are welcome.
-
-When adding a new tweak, please provide:
-
-A descriptive name
-
-An enable.reg file
-
-A disable.reg rollback file
-
-Documentation explaining the change
-
-The affected registry hive and path
-
-Any required permissions
-
-Supported Windows versions, when relevant
-
-Testing information
-
-License
-
-RegForge is released under the MIT License.
+RegForge is released under the [MIT License](LICENSE).
