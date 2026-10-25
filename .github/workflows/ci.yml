@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate tweaks and profiles
+        run: python scripts/validate.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Catalog is up to date
+        run: python scripts/build_catalog.py --check
+
+  smoke-test:
+    # Applies and reverts every tweak on a real Windows runner (runner is admin).
+    runs-on: windows-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply and revert every tweak
+        shell: pwsh
+        run: |
+          $ids = Get-ChildItem tweaks -Filter tweak.json -Recurse |
+                 ForEach-Object { (Get-Content $_.FullName -Raw | ConvertFrom-Json).id }
+          foreach ($id in $ids) {
+            Write-Host "::group::$id"
+            ./regforge.ps1 apply $id -Force
+            ./regforge.ps1 revert $id -Force
+            Write-Host "::endgroup::"
+          }
+      - name: Spot-check a value round-trips
+        shell: pwsh
+        run: |
+          $p = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced'
+          ./regforge.ps1 apply explorer/show-file-extensions -Force
+          if ((Get-ItemProperty $p).HideFileExt -ne 0) { throw 'enable did not apply' }
+          ./regforge.ps1 revert explorer/show-file-extensions -Force
+          if ((Get-ItemProperty $p).HideFileExt -ne 1) { throw 'disable did not restore' }
