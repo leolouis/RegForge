@@ -1,0 +1,9 @@
+{
+  "name": "Windows 11 classic feel",
+  "description": "Make Windows 11 behave more like Windows 10. Windows 11 only.",
+  "tweaks": [
+    "explorer/classic-context-menu",
+    "taskbar/align-left",
+    "taskbar/hide-task-view-button"
+  ]
+}

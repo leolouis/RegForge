@@ -1,0 +1,10 @@
+{
+  "name": "Performance lite",
+  "description": "Snappier UI with no admin rights needed and no loss of features you are likely to miss.",
+  "tweaks": [
+    "performance/disable-window-animations",
+    "performance/disable-startup-delay",
+    "explorer/disable-aero-shake",
+    "desktop/disable-transparency"
+  ]
+}

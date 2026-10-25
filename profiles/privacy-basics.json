@@ -1,0 +1,7 @@
+{
+  "name": "Privacy basics",
+  "description": "Conservative privacy settings that do not break Windows features.",
+  "tweaks": [
+    "privacy/disable-advertising-id"
+  ]
+}

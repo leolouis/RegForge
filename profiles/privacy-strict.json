@@ -1,0 +1,16 @@
+{
+  "name": "Privacy strict",
+  "description": "Broader privacy hardening. Includes admin-level policy values; review each tweak first.",
+  "tweaks": [
+    "privacy/disable-advertising-id",
+    "privacy/disable-tailored-experiences",
+    "privacy/disable-start-suggestions",
+    "privacy/disable-lock-screen-tips",
+    "privacy/disable-app-launch-tracking",
+    "privacy/disable-language-list-websites",
+    "privacy/disable-feedback-prompts",
+    "privacy/disable-bing-search-in-start",
+    "privacy/disable-activity-history",
+    "privacy/limit-diagnostic-data"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Power user",
+  "description": "Explorer and system visibility tweaks for people who want to see everything.",
+  "tweaks": [
+    "explorer/show-file-extensions",
+    "explorer/show-hidden-files",
+    "explorer/show-full-path-in-title-bar",
+    "explorer/show-empty-drives",
+    "explorer/show-merge-conflicts",
+    "explorer/navpane-expand-to-current-folder",
+    "system/verbose-boot-messages",
+    "system/show-bsod-details"
+  ]
+}

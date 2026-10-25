@@ -1,0 +1,9 @@
+{
+  "name": "Essentials",
+  "description": "Low-risk quality-of-life tweaks for File Explorer. No admin rights needed.",
+  "tweaks": [
+    "explorer/show-file-extensions",
+    "explorer/show-hidden-files",
+    "explorer/open-to-this-pc"
+  ]
+}

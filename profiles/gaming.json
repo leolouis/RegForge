@@ -1,0 +1,11 @@
+{
+  "name": "Gaming",
+  "description": "Latency and overhead tweaks popular with gamers. Some are of unproven benefit; measure before keeping.",
+  "tweaks": [
+    "system/disable-mouse-acceleration",
+    "performance/disable-game-dvr",
+    "performance/enable-hardware-gpu-scheduling",
+    "performance/foreground-priority-boost",
+    "networking/disable-network-throttling"
+  ]
+}
