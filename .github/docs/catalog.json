@@ -1,0 +1,1200 @@
+[
+  {
+    "id": "desktop/accent-color-on-title-bars",
+    "name": "Accent colour on title bars",
+    "category": "desktop",
+    "description": "Use your accent colour on window title bars and borders.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Takes effect immediately",
+    "risk": "low",
+    "tags": [
+      "desktop",
+      "theme"
+    ],
+    "tested": [],
+    "path": "tweaks/desktop/accent-color-on-title-bars"
+  },
+  {
+    "id": "desktop/dark-mode",
+    "name": "Dark mode for apps and system",
+    "category": "desktop",
+    "description": "Switch both the Windows UI and supporting apps to the dark theme.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Takes effect immediately",
+    "risk": "low",
+    "tags": [
+      "desktop",
+      "theme"
+    ],
+    "tested": [],
+    "path": "tweaks/desktop/dark-mode"
+  },
+  {
+    "id": "desktop/disable-transparency",
+    "name": "Disable transparency effects",
+    "category": "desktop",
+    "description": "Turn off translucent effects on taskbar, Start and windows.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Takes effect immediately",
+    "risk": "low",
+    "tags": [
+      "desktop",
+      "performance"
+    ],
+    "tested": [],
+    "path": "tweaks/desktop/disable-transparency"
+  },
+  {
+    "id": "desktop/show-seconds-in-clock",
+    "name": "Show seconds in the taskbar clock",
+    "category": "desktop",
+    "description": "Display seconds in the system tray clock.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11 (22H2 or later)",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "desktop",
+      "taskbar"
+    ],
+    "tested": [],
+    "path": "tweaks/desktop/show-seconds-in-clock"
+  },
+  {
+    "id": "desktop/show-this-pc-icon",
+    "name": "Show This PC on the desktop",
+    "category": "desktop",
+    "description": "Add the This PC icon to the desktop.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Refresh the desktop (F5)",
+    "risk": "low",
+    "tags": [
+      "desktop"
+    ],
+    "tested": [],
+    "path": "tweaks/desktop/show-this-pc-icon"
+  },
+  {
+    "id": "desktop/show-user-files-icon",
+    "name": "Show your user folder on the desktop",
+    "category": "desktop",
+    "description": "Add your user files folder icon to the desktop.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Refresh the desktop (F5)",
+    "risk": "low",
+    "tags": [
+      "desktop"
+    ],
+    "tested": [],
+    "path": "tweaks/desktop/show-user-files-icon"
+  },
+  {
+    "id": "explorer/classic-explorer-ribbon",
+    "name": "Classic Explorer ribbon (early Windows 11)",
+    "category": "explorer",
+    "description": "Block the new Windows 11 Explorer command bar so the older ribbon is used.",
+    "requiresAdmin": true,
+    "windows": "Windows 11 21H2 / early 22H2 builds only",
+    "restart": "Restart Explorer or sign out",
+    "risk": "medium",
+    "tags": [
+      "explorer",
+      "ui"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/classic-explorer-ribbon"
+  },
+  {
+    "id": "explorer/classic-context-menu",
+    "name": "Classic right-click menu (Windows 11)",
+    "category": "explorer",
+    "description": "Restore the full Windows 10 style context menu instead of the condensed Windows 11 one.",
+    "requiresAdmin": false,
+    "windows": "Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "context-menu"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/classic-context-menu"
+  },
+  {
+    "id": "explorer/compact-view",
+    "name": "Compact view in Explorer (Windows 11)",
+    "category": "explorer",
+    "description": "Reduce spacing between items in File Explorer lists.",
+    "requiresAdmin": false,
+    "windows": "Windows 11 (22H2 or later)",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "ui"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/compact-view"
+  },
+  {
+    "id": "explorer/disable-aero-shake",
+    "name": "Disable Aero Shake",
+    "category": "explorer",
+    "description": "Stop shaking a window from minimising all other windows.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "ui"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/disable-aero-shake"
+  },
+  {
+    "id": "explorer/disable-desktop-tooltips",
+    "name": "Disable folder and desktop item tooltips",
+    "category": "explorer",
+    "description": "Turn off the pop-up description when hovering over folders and desktop items.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "ui"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/disable-desktop-tooltips"
+  },
+  {
+    "id": "explorer/disable-sharing-wizard",
+    "name": "Disable the Sharing Wizard",
+    "category": "explorer",
+    "description": "Use the classic Sharing tab dialog instead of the simplified Sharing Wizard.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Open a new Explorer window",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "sharing"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/disable-sharing-wizard"
+  },
+  {
+    "id": "explorer/hide-recent-and-frequent",
+    "name": "Hide recent files and frequent folders",
+    "category": "explorer",
+    "description": "Stop Explorer from listing recently used files and frequently used folders.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Open a new Explorer window",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "privacy"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/hide-recent-and-frequent"
+  },
+  {
+    "id": "explorer/navpane-expand-to-current-folder",
+    "name": "Navigation pane: show all folders and expand to current",
+    "category": "explorer",
+    "description": "Show all folders in the navigation pane and auto-expand to the folder you are viewing.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Open a new Explorer window",
+    "risk": "low",
+    "tags": [
+      "explorer"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/navpane-expand-to-current-folder"
+  },
+  {
+    "id": "explorer/open-to-this-pc",
+    "name": "Open File Explorer to This PC",
+    "category": "explorer",
+    "description": "Open File Explorer on This PC instead of Home / Quick access.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Open a new Explorer window",
+    "risk": "low",
+    "tags": [
+      "explorer"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/open-to-this-pc"
+  },
+  {
+    "id": "explorer/separate-process-folder-windows",
+    "name": "Open folder windows in a separate process",
+    "category": "explorer",
+    "description": "Run each Explorer window in its own process so a crash in one does not take down the others.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "stability"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/separate-process-folder-windows"
+  },
+  {
+    "id": "explorer/show-empty-drives",
+    "name": "Show empty drives",
+    "category": "explorer",
+    "description": "Show card reader and optical drive letters even when no media is inserted.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "explorer"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/show-empty-drives"
+  },
+  {
+    "id": "explorer/show-file-extensions",
+    "name": "Show file extensions",
+    "category": "explorer",
+    "description": "Always show file extensions (.txt, .exe, ...) in File Explorer. Helps spot disguised files.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "security"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/show-file-extensions"
+  },
+  {
+    "id": "explorer/show-merge-conflicts",
+    "name": "Show folder merge conflicts",
+    "category": "explorer",
+    "description": "Ask what to do when copying folders with the same name instead of merging silently.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Open a new Explorer window",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "safety"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/show-merge-conflicts"
+  },
+  {
+    "id": "explorer/show-full-path-in-title-bar",
+    "name": "Show full path in the Explorer title bar",
+    "category": "explorer",
+    "description": "Display the complete folder path in the title bar of File Explorer windows.",
+    "requiresAdmin": false,
+    "windows": "Windows 10",
+    "restart": "Reopen Explorer windows",
+    "risk": "low",
+    "tags": [
+      "explorer"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/show-full-path-in-title-bar"
+  },
+  {
+    "id": "explorer/show-hidden-files",
+    "name": "Show hidden files and folders",
+    "category": "explorer",
+    "description": "Show files and folders marked as hidden in File Explorer.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "explorer"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/show-hidden-files"
+  },
+  {
+    "id": "explorer/enable-item-checkboxes",
+    "name": "Show item check boxes",
+    "category": "explorer",
+    "description": "Show selection check boxes next to files and folders in Explorer.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "explorer",
+      "accessibility"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/enable-item-checkboxes"
+  },
+  {
+    "id": "explorer/show-protected-os-files",
+    "name": "Show protected operating system files",
+    "category": "explorer",
+    "description": "Reveal protected system files (such as desktop.ini and pagefile.sys) in Explorer.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "medium",
+    "tags": [
+      "explorer"
+    ],
+    "tested": [],
+    "path": "tweaks/explorer/show-protected-os-files"
+  },
+  {
+    "id": "networking/disable-llmnr",
+    "name": "Disable LLMNR",
+    "category": "networking",
+    "description": "Turn off Link-Local Multicast Name Resolution, a legacy protocol often abused in spoofing attacks.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "Reboot recommended",
+    "risk": "medium",
+    "tags": [
+      "networking",
+      "security",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/networking/disable-llmnr"
+  },
+  {
+    "id": "networking/disable-network-throttling",
+    "name": "Disable multimedia network throttling",
+    "category": "networking",
+    "description": "Set the MMCSS NetworkThrottlingIndex to unlimited.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot",
+    "risk": "medium",
+    "tags": [
+      "networking",
+      "gaming"
+    ],
+    "tested": [],
+    "path": "tweaks/networking/disable-network-throttling"
+  },
+  {
+    "id": "networking/disable-smb1-server",
+    "name": "Disable the SMB1 server protocol",
+    "category": "networking",
+    "description": "Prevent this PC from serving files over the obsolete, insecure SMB1 protocol.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot recommended",
+    "risk": "medium",
+    "tags": [
+      "networking",
+      "security",
+      "smb"
+    ],
+    "tested": [],
+    "path": "tweaks/networking/disable-smb1-server"
+  },
+  {
+    "id": "performance/disable-game-dvr",
+    "name": "Disable Game DVR background capture",
+    "category": "performance",
+    "description": "Turn off Xbox Game Bar background recording, which can cost performance in games.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "performance",
+      "gaming"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/disable-game-dvr"
+  },
+  {
+    "id": "performance/disable-window-animations",
+    "name": "Disable minimise/maximise animation",
+    "category": "performance",
+    "description": "Skip the window minimise and maximise animation.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "performance",
+      "ui"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/disable-window-animations"
+  },
+  {
+    "id": "performance/enable-hardware-gpu-scheduling",
+    "name": "Enable hardware-accelerated GPU scheduling",
+    "category": "performance",
+    "description": "Let the GPU manage its own video memory scheduling to reduce latency.",
+    "requiresAdmin": true,
+    "windows": "Windows 10 (2004+), Windows 11",
+    "restart": "Reboot",
+    "risk": "medium",
+    "tags": [
+      "performance",
+      "gpu",
+      "gaming"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/enable-hardware-gpu-scheduling"
+  },
+  {
+    "id": "performance/show-core-parking-option",
+    "name": "Expose the CPU core parking power setting",
+    "category": "performance",
+    "description": "Make the hidden Minimum processor cores (core parking) option visible in Advanced power settings.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reopen power options",
+    "risk": "low",
+    "tags": [
+      "performance",
+      "power",
+      "cpu"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/show-core-parking-option"
+  },
+  {
+    "id": "performance/faster-app-shutdown",
+    "name": "Faster app shutdown timeouts",
+    "category": "performance",
+    "description": "Shorten the time Windows waits for apps to close before ending them at sign-out or shutdown.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "medium",
+    "tags": [
+      "performance",
+      "shutdown"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/faster-app-shutdown"
+  },
+  {
+    "id": "performance/faster-menu-show-delay",
+    "name": "Faster menu show delay",
+    "category": "performance",
+    "description": "Reduce the delay before cascading menus open from 400 ms to 100 ms.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "performance",
+      "ui"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/faster-menu-show-delay"
+  },
+  {
+    "id": "performance/faster-service-shutdown",
+    "name": "Faster service shutdown timeout",
+    "category": "performance",
+    "description": "Shorten how long Windows waits for services to stop at shutdown (5 s to 2 s).",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot",
+    "risk": "medium",
+    "tags": [
+      "performance",
+      "shutdown"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/faster-service-shutdown"
+  },
+  {
+    "id": "performance/foreground-priority-boost",
+    "name": "Favour foreground applications for CPU time",
+    "category": "performance",
+    "description": "Change Win32PrioritySeparation so the active window gets a larger share of CPU scheduling.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot",
+    "risk": "medium",
+    "tags": [
+      "performance",
+      "scheduler"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/foreground-priority-boost"
+  },
+  {
+    "id": "performance/disable-paging-executive",
+    "name": "Keep the kernel in RAM (disable paging executive)",
+    "category": "performance",
+    "description": "Stop Windows paging kernel and driver code out to disk.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot",
+    "risk": "medium",
+    "tags": [
+      "performance",
+      "memory"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/disable-paging-executive"
+  },
+  {
+    "id": "performance/disable-startup-delay",
+    "name": "Remove desktop app startup delay",
+    "category": "performance",
+    "description": "Start startup apps immediately after sign-in instead of after a built-in delay.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "performance",
+      "startup"
+    ],
+    "tested": [],
+    "path": "tweaks/performance/disable-startup-delay"
+  },
+  {
+    "id": "privacy/disable-activity-history",
+    "name": "Disable activity history",
+    "category": "privacy",
+    "description": "Stop Windows collecting and uploading your activity history (Timeline).",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "Reboot recommended",
+    "risk": "low",
+    "tags": [
+      "privacy",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-activity-history"
+  },
+  {
+    "id": "privacy/disable-advertising-id",
+    "name": "Disable advertising ID",
+    "category": "privacy",
+    "description": "Stop apps from using your advertising ID for cross-app personalised ads.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "None",
+    "risk": "low",
+    "tags": [
+      "privacy",
+      "ads"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-advertising-id"
+  },
+  {
+    "id": "privacy/disable-app-launch-tracking",
+    "name": "Disable app launch tracking",
+    "category": "privacy",
+    "description": "Stop Windows tracking launched apps to improve Start and search results.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "privacy"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-app-launch-tracking"
+  },
+  {
+    "id": "privacy/disable-lock-screen-tips",
+    "name": "Disable lock screen tips and spotlight overlays",
+    "category": "privacy",
+    "description": "Remove fun facts, tips and promotional overlays from the lock screen.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Lock and unlock",
+    "risk": "low",
+    "tags": [
+      "privacy",
+      "ads"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-lock-screen-tips"
+  },
+  {
+    "id": "privacy/disable-start-suggestions",
+    "name": "Disable Start menu suggestions and promoted content",
+    "category": "privacy",
+    "description": "Turn off suggested apps, tips and promotional content in Start and Settings.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "privacy",
+      "ads"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-start-suggestions"
+  },
+  {
+    "id": "privacy/disable-tailored-experiences",
+    "name": "Disable tailored experiences",
+    "category": "privacy",
+    "description": "Stop Windows using diagnostic data to offer personalised tips and recommendations.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "None",
+    "risk": "low",
+    "tags": [
+      "privacy"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-tailored-experiences"
+  },
+  {
+    "id": "privacy/disable-bing-search-in-start",
+    "name": "Disable web results in Start search",
+    "category": "privacy",
+    "description": "Keep Start search local: no Bing web suggestions.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "privacy",
+      "search"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-bing-search-in-start"
+  },
+  {
+    "id": "privacy/disable-consumer-features",
+    "name": "Disable Windows consumer features",
+    "category": "privacy",
+    "description": "Stop Windows installing suggested third-party apps and promotions automatically.",
+    "requiresAdmin": true,
+    "windows": "Windows 10/11 Enterprise and Education",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "privacy",
+      "ads",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-consumer-features"
+  },
+  {
+    "id": "privacy/disable-error-reporting",
+    "name": "Disable Windows Error Reporting",
+    "category": "privacy",
+    "description": "Stop Windows sending crash and error reports to Microsoft.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "None",
+    "risk": "low",
+    "tags": [
+      "privacy"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-error-reporting"
+  },
+  {
+    "id": "privacy/disable-feedback-prompts",
+    "name": "Disable Windows feedback prompts",
+    "category": "privacy",
+    "description": "Stop Windows from asking for feedback.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "None",
+    "risk": "low",
+    "tags": [
+      "privacy"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-feedback-prompts"
+  },
+  {
+    "id": "privacy/limit-diagnostic-data",
+    "name": "Limit diagnostic data to required",
+    "category": "privacy",
+    "description": "Set diagnostic data to the minimum that Windows allows on your edition.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "None",
+    "risk": "low",
+    "tags": [
+      "privacy",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/limit-diagnostic-data"
+  },
+  {
+    "id": "privacy/disable-language-list-websites",
+    "name": "Stop websites accessing your language list",
+    "category": "privacy",
+    "description": "Prevent websites from reading your installed language list.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "None",
+    "risk": "low",
+    "tags": [
+      "privacy"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-language-list-websites"
+  },
+  {
+    "id": "privacy/disable-copilot-policy",
+    "name": "Turn off Windows Copilot (policy)",
+    "category": "privacy",
+    "description": "Disable the original Windows Copilot integration for the current user.",
+    "requiresAdmin": false,
+    "windows": "Windows 11 (builds with the legacy Copilot sidebar)",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "privacy",
+      "ai",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/privacy/disable-copilot-policy"
+  },
+  {
+    "id": "system/smartscreen-block-bypass",
+    "name": "Block SmartScreen warning bypass",
+    "category": "system",
+    "description": "Enforce SmartScreen and remove the option to run flagged files anyway.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "Reboot recommended",
+    "risk": "medium",
+    "tags": [
+      "system",
+      "security",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/system/smartscreen-block-bypass"
+  },
+  {
+    "id": "system/block-usb-storage",
+    "name": "Block USB mass storage devices",
+    "category": "system",
+    "description": "Prevent USB flash drives and external disks from mounting.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot (or reconnect devices)",
+    "risk": "high",
+    "tags": [
+      "system",
+      "security",
+      "lockdown"
+    ],
+    "tested": [],
+    "path": "tweaks/system/block-usb-storage"
+  },
+  {
+    "id": "system/delete-roaming-profile-cache",
+    "name": "Delete roaming profile cache at sign-out",
+    "category": "system",
+    "description": "Remove locally cached copies of roaming profiles when the user signs out.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "system",
+      "domain",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/system/delete-roaming-profile-cache"
+  },
+  {
+    "id": "system/disable-command-prompt",
+    "name": "Disable Command Prompt",
+    "category": "system",
+    "description": "Block cmd.exe and batch files for the current user.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "high",
+    "tags": [
+      "system",
+      "lockdown",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/system/disable-command-prompt"
+  },
+  {
+    "id": "system/disable-mouse-acceleration",
+    "name": "Disable mouse pointer acceleration",
+    "category": "system",
+    "description": "Turn off Enhance pointer precision for consistent 1:1 mouse movement, popular for gaming.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "system",
+      "mouse",
+      "gaming"
+    ],
+    "tested": [],
+    "path": "tweaks/system/disable-mouse-acceleration"
+  },
+  {
+    "id": "system/disable-ntfs-8dot3-names",
+    "name": "Disable NTFS 8.3 short name creation",
+    "category": "system",
+    "description": "Stop Windows creating legacy 8.3 short file names on all NTFS volumes.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot",
+    "risk": "medium",
+    "tags": [
+      "system",
+      "filesystem"
+    ],
+    "tested": [],
+    "path": "tweaks/system/disable-ntfs-8dot3-names"
+  },
+  {
+    "id": "system/disable-ntfs-last-access",
+    "name": "Disable NTFS last access time updates",
+    "category": "system",
+    "description": "Stop writing a last-accessed timestamp every time a file is read.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot",
+    "risk": "low",
+    "tags": [
+      "system",
+      "filesystem"
+    ],
+    "tested": [],
+    "path": "tweaks/system/disable-ntfs-last-access"
+  },
+  {
+    "id": "system/disable-sticky-keys-popup",
+    "name": "Disable Sticky/Filter/Toggle Keys shortcuts",
+    "category": "system",
+    "description": "Stop the pop-ups triggered by pressing Shift five times, holding Shift, or holding Num Lock.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Sign out and back in",
+    "risk": "low",
+    "tags": [
+      "system",
+      "accessibility"
+    ],
+    "tested": [],
+    "path": "tweaks/system/disable-sticky-keys-popup"
+  },
+  {
+    "id": "system/disable-windows-script-host",
+    "name": "Disable Windows Script Host",
+    "category": "system",
+    "description": "Block .vbs and .js scripts from running through wscript/cscript.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "None",
+    "risk": "medium",
+    "tags": [
+      "system",
+      "security"
+    ],
+    "tested": [],
+    "path": "tweaks/system/disable-windows-script-host"
+  },
+  {
+    "id": "system/disable-auto-restart-on-bsod",
+    "name": "Don't restart automatically after a blue screen",
+    "category": "system",
+    "description": "Keep the blue screen on display so you can read the stop code.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "None",
+    "risk": "low",
+    "tags": [
+      "system",
+      "diagnostics"
+    ],
+    "tested": [],
+    "path": "tweaks/system/disable-auto-restart-on-bsod"
+  },
+  {
+    "id": "system/enable-remote-desktop",
+    "name": "Enable Remote Desktop",
+    "category": "system",
+    "description": "Allow incoming Remote Desktop (RDP) connections.",
+    "requiresAdmin": true,
+    "windows": "Windows 10/11 Pro, Enterprise, Education",
+    "restart": "None",
+    "risk": "high",
+    "tags": [
+      "system",
+      "remote",
+      "security"
+    ],
+    "tested": [],
+    "path": "tweaks/system/enable-remote-desktop"
+  },
+  {
+    "id": "system/enable-long-paths",
+    "name": "Enable Win32 long paths",
+    "category": "system",
+    "description": "Allow applications that opt in to use file paths longer than 260 characters.",
+    "requiresAdmin": true,
+    "windows": "Windows 10 (1607+), Windows 11",
+    "restart": "Reboot recommended",
+    "risk": "low",
+    "tags": [
+      "system",
+      "filesystem"
+    ],
+    "tested": [],
+    "path": "tweaks/system/enable-long-paths"
+  },
+  {
+    "id": "system/ntfs-mft-zone-reservation",
+    "name": "Increase NTFS MFT zone reservation",
+    "category": "system",
+    "description": "Reserve more disk space for the Master File Table (12.5 % to 25 %).",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot",
+    "risk": "low",
+    "tags": [
+      "system",
+      "filesystem"
+    ],
+    "tested": [],
+    "path": "tweaks/system/ntfs-mft-zone-reservation"
+  },
+  {
+    "id": "system/increase-cached-logons",
+    "name": "Raise cached domain logons to 50",
+    "category": "system",
+    "description": "Remember up to 50 domain accounts for offline sign-in.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "None",
+    "risk": "medium",
+    "tags": [
+      "system",
+      "domain",
+      "security"
+    ],
+    "tested": [],
+    "path": "tweaks/system/increase-cached-logons"
+  },
+  {
+    "id": "system/show-bsod-details",
+    "name": "Show technical details on the blue screen",
+    "category": "system",
+    "description": "Display the technical stop code parameters on the blue screen.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot",
+    "risk": "low",
+    "tags": [
+      "system",
+      "diagnostics"
+    ],
+    "tested": [],
+    "path": "tweaks/system/show-bsod-details"
+  },
+  {
+    "id": "system/verbose-boot-messages",
+    "name": "Show verbose startup and shutdown messages",
+    "category": "system",
+    "description": "Show detailed status text (such as what Windows is doing) during sign-in, sign-out and shutdown.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Reboot",
+    "risk": "low",
+    "tags": [
+      "system",
+      "diagnostics"
+    ],
+    "tested": [],
+    "path": "tweaks/system/verbose-boot-messages"
+  },
+  {
+    "id": "taskbar/align-left",
+    "name": "Align taskbar icons to the left (Windows 11)",
+    "category": "taskbar",
+    "description": "Move the Windows 11 taskbar icons and Start button to the left edge.",
+    "requiresAdmin": false,
+    "windows": "Windows 11",
+    "restart": "Takes effect immediately or after Explorer restart",
+    "risk": "low",
+    "tags": [
+      "taskbar"
+    ],
+    "tested": [],
+    "path": "tweaks/taskbar/align-left"
+  },
+  {
+    "id": "taskbar/hide-start-recommendations",
+    "name": "Hide Start menu recommendations (Windows 11)",
+    "category": "taskbar",
+    "description": "Remove the Recommended section content from the Windows 11 Start menu.",
+    "requiresAdmin": false,
+    "windows": "Windows 11 (23H2 or later)",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "taskbar",
+      "start-menu"
+    ],
+    "tested": [],
+    "path": "tweaks/taskbar/hide-start-recommendations"
+  },
+  {
+    "id": "taskbar/hide-task-view-button",
+    "name": "Hide the Task View button",
+    "category": "taskbar",
+    "description": "Remove the Task View button from the taskbar. Win+Tab still works.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "taskbar"
+    ],
+    "tested": [],
+    "path": "tweaks/taskbar/hide-task-view-button"
+  },
+  {
+    "id": "taskbar/hide-search-box",
+    "name": "Hide the taskbar search box",
+    "category": "taskbar",
+    "description": "Remove the search box or icon from the taskbar. Search still works from Start.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11",
+    "restart": "Takes effect immediately or after Explorer restart",
+    "risk": "low",
+    "tags": [
+      "taskbar",
+      "search"
+    ],
+    "tested": [],
+    "path": "tweaks/taskbar/hide-search-box"
+  },
+  {
+    "id": "taskbar/never-combine-buttons",
+    "name": "Never combine taskbar buttons",
+    "category": "taskbar",
+    "description": "Show a separate taskbar button for every window of the same app.",
+    "requiresAdmin": false,
+    "windows": "Windows 10, Windows 11 (23H2 or later)",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "taskbar"
+    ],
+    "tested": [],
+    "path": "tweaks/taskbar/never-combine-buttons"
+  },
+  {
+    "id": "taskbar/small-taskbar-icons",
+    "name": "Small taskbar icons (Windows 10)",
+    "category": "taskbar",
+    "description": "Use small icons on the Windows 10 taskbar.",
+    "requiresAdmin": false,
+    "windows": "Windows 10",
+    "restart": "Restart Explorer or sign out",
+    "risk": "low",
+    "tags": [
+      "taskbar"
+    ],
+    "tested": [],
+    "path": "tweaks/taskbar/small-taskbar-icons"
+  },
+  {
+    "id": "windows-update/disable-store-auto-update",
+    "name": "Disable automatic Microsoft Store app updates",
+    "category": "windows-update",
+    "description": "Stop the Microsoft Store from updating apps automatically.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "None",
+    "risk": "medium",
+    "tags": [
+      "windows-update",
+      "store",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/windows-update/disable-store-auto-update"
+  },
+  {
+    "id": "windows-update/disable-driver-updates",
+    "name": "Exclude drivers from Windows Update",
+    "category": "windows-update",
+    "description": "Stop Windows Update from delivering driver updates with quality updates.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "None",
+    "risk": "medium",
+    "tags": [
+      "windows-update",
+      "policy",
+      "drivers"
+    ],
+    "tested": [],
+    "path": "tweaks/windows-update/disable-driver-updates"
+  },
+  {
+    "id": "windows-update/no-auto-reboot-when-signed-in",
+    "name": "No auto-restart while users are signed in",
+    "category": "windows-update",
+    "description": "Prevent Windows Update from automatically restarting the PC while someone is signed in.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "None",
+    "risk": "low",
+    "tags": [
+      "windows-update",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/windows-update/no-auto-reboot-when-signed-in"
+  },
+  {
+    "id": "windows-update/notify-before-download",
+    "name": "Notify before downloading updates",
+    "category": "windows-update",
+    "description": "Ask before downloading and installing Windows updates.",
+    "requiresAdmin": true,
+    "windows": "Windows 10, Windows 11 (Pro, Enterprise, Education)",
+    "restart": "None",
+    "risk": "medium",
+    "tags": [
+      "windows-update",
+      "policy"
+    ],
+    "tested": [],
+    "path": "tweaks/windows-update/notify-before-download"
+  }
+]
